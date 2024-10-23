@@ -39,6 +39,10 @@ namespace Proyecto_1_DSIV
             btnRaiz.Click += new System.EventHandler(this.Raiz_Click);
             btnDecimal.Click += new System.EventHandler(this.Decimal_Click);
             btnNegativo.Click += new System.EventHandler(this.Negativo_Click); // Botón de negativo/positivo
+
+            btnParentesisAbre.Click += new System.EventHandler(this.Parentesis_Click); // Añadir evento click para paréntesis de apertura
+            btnParentesisCierra.Click += new System.EventHandler(this.Parentesis_Click); // Añadir evento click para paréntesis de cierre
+            btnRaizCubica.Click += new System.EventHandler(this.RaizCubica_Click);
         }
         double valor1, valor2; // Variables para almacenar los valores de las operaciones
         string operacion;      // Variable para almacenar la operación actual
@@ -142,13 +146,17 @@ namespace Proyecto_1_DSIV
         }
         private string ObtenerOperador(string expresion)
         {
+            if (expresion.Contains("(") || expresion.Contains(")"))
+            {
+                return "COMBINADA";
+            }
             if (expresion.Contains("+")) return "SUMA";
             else if (expresion.Contains("-")) return "RESTA";
             else if (expresion.Contains("*")) return "MULTIPLICACIÓN";
             else if (expresion.Contains("/")) return "DIVISIÓN";
             else if (expresion.Contains("^")) return "POTENCIA";
             else if (expresion.Contains("√")) return "RAÍZ CUADRADA";
-
+            else if (expresion.Contains("∛")) return "RAÍZ CÚBICA";
             return "DESCONOCIDO";
         }
 
@@ -170,5 +178,29 @@ namespace Proyecto_1_DSIV
                 txtDisplay.Text = "Error";
             }
         }
+        private void Parentesis_Click(object sender, EventArgs e)
+        {
+            Button boton = (Button)sender; // Obtener el botón que fue presionado
+            txtDisplay.Text += boton.Text; // Agregar el texto del botón al `TextBox`
+        }
+
+        private void RaizCubica_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double valor = Convert.ToDouble(txtDisplay.Text);
+                double resultado = operaciones.RaizCubica(valor); // Usa la función personalizada
+                txtDisplay.Text = resultado.ToString();
+                // Guardar la operación en la base de datos
+                string operador = "RAÍZ CÚBICA";
+                string expresion = "∛" + valor;
+                historial.GuardarCalculo(expresion, resultado.ToString(), operador);
+            }
+            catch (Exception ex)
+            {
+                txtDisplay.Text = "Error";
+            }
+        }
+
     }
 }

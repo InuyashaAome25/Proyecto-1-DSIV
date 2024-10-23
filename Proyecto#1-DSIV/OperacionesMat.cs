@@ -41,11 +41,9 @@ namespace Proyecto_1_DSIV
             return Math.Pow(a, b);
         }
 
-        public double EvaluarExpresion(string expresion)
+        public double RaizCubica(double valor)
         {
-            var tabla = new DataTable();
-            var resultado = tabla.Compute(expresion, string.Empty);
-            return Convert.ToDouble(resultado);
+            return Math.Pow(valor, 1.0 / 3.0);
         }
     }
 }
