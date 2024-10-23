@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtDisplay = new System.Windows.Forms.TextBox();
-            this.btnBorrar = new System.Windows.Forms.Button();
-            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnCE = new System.Windows.Forms.Button();
+            this.btnC = new System.Windows.Forms.Button();
             this.btnExponente = new System.Windows.Forms.Button();
             this.btnRaiz = new System.Windows.Forms.Button();
             this.btnCero = new System.Windows.Forms.Button();
@@ -70,25 +70,27 @@
             this.txtDisplay.Size = new System.Drawing.Size(402, 22);
             this.txtDisplay.TabIndex = 1;
             // 
-            // btnBorrar
+            // btnCE
             // 
-            this.btnBorrar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrar.Location = new System.Drawing.Point(86, 100);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(75, 35);
-            this.btnBorrar.TabIndex = 2;
-            this.btnBorrar.Text = "CE";
-            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnCE.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCE.Location = new System.Drawing.Point(86, 100);
+            this.btnCE.Name = "btnCE";
+            this.btnCE.Size = new System.Drawing.Size(75, 35);
+            this.btnCE.TabIndex = 2;
+            this.btnCE.Text = "CE";
+            this.btnCE.UseVisualStyleBackColor = true;
+            this.btnCE.Click += new System.EventHandler(this.btnCE_Click);
             // 
-            // btnLimpiar
+            // btnC
             // 
-            this.btnLimpiar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(168, 100);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(75, 35);
-            this.btnLimpiar.TabIndex = 3;
-            this.btnLimpiar.Text = "C";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnC.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnC.Location = new System.Drawing.Point(168, 100);
+            this.btnC.Name = "btnC";
+            this.btnC.Size = new System.Drawing.Size(75, 35);
+            this.btnC.TabIndex = 3;
+            this.btnC.Text = "C";
+            this.btnC.UseVisualStyleBackColor = true;
+            this.btnC.Click += new System.EventHandler(this.btnC_Click);
             // 
             // btnExponente
             // 
@@ -305,8 +307,8 @@
             this.Controls.Add(this.btnCero);
             this.Controls.Add(this.btnRaiz);
             this.Controls.Add(this.btnExponente);
-            this.Controls.Add(this.btnLimpiar);
-            this.Controls.Add(this.btnBorrar);
+            this.Controls.Add(this.btnC);
+            this.Controls.Add(this.btnCE);
             this.Controls.Add(this.txtDisplay);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -321,8 +323,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtDisplay;
-        private System.Windows.Forms.Button btnBorrar;
-        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnCE;
+        private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Button btnExponente;
         private System.Windows.Forms.Button btnRaiz;
         private System.Windows.Forms.Button btnCero;

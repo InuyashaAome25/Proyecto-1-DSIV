@@ -15,10 +15,9 @@ namespace Proyecto_1_DSIV
         public Form1()
         {
             InitializeComponent();
-        }
+            btnCE.Click += new System.EventHandler(this.btnCE_Click);
+            btnC.Click += new System.EventHandler(this.btnC_Click);
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
             //Bloque de evento click para los botones numericos
             btnCero.Click += new System.EventHandler(this.Numero_Click);
             btnUno.Click += new System.EventHandler(this.Numero_Click);
@@ -40,6 +39,13 @@ namespace Proyecto_1_DSIV
             btnRaiz.Click += new System.EventHandler(this.Operacion_Click);
             btnDecimal.Click += new System.EventHandler(this.Operacion_Click);
         }
+        double valor1, valor2; // Variables para almacenar los valores de las operaciones
+        string operacion;      // Variable para almacenar la operación actual
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
 
         private void Numero_Click(object sender, EventArgs e)
         {
@@ -50,6 +56,19 @@ namespace Proyecto_1_DSIV
         {
             Button boton = (Button)sender; // Obtener el botón que fue presionado
             txtDisplay.Text += " " + boton.Text + " "; // Agregar el operador al `TextBox` con espacios
+        }
+
+        private void btnCE_Click(object sender, EventArgs e)
+        {
+            txtDisplay.Clear();
+        }
+
+        private void btnC_Click(object sender, EventArgs e)
+        {
+            txtDisplay.Clear();
+            valor1 = 0;
+            valor2 = 0;
+            operacion = string.Empty;
         }
     }
 }
