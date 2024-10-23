@@ -49,7 +49,7 @@
             this.btnRestar = new System.Windows.Forms.Button();
             this.btnSumar = new System.Windows.Forms.Button();
             this.btnDecimal = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
+            this.btnNegativo = new System.Windows.Forms.Button();
             this.btnResultado = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mostrarHistorialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -266,15 +266,15 @@
             this.btnDecimal.Text = ".";
             this.btnDecimal.UseVisualStyleBackColor = true;
             // 
-            // button20
+            // btnNegativo
             // 
-            this.button20.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.Location = new System.Drawing.Point(167, 315);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(75, 34);
-            this.button20.TabIndex = 21;
-            this.button20.Text = "+/-";
-            this.button20.UseVisualStyleBackColor = true;
+            this.btnNegativo.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNegativo.Location = new System.Drawing.Point(167, 315);
+            this.btnNegativo.Name = "btnNegativo";
+            this.btnNegativo.Size = new System.Drawing.Size(75, 34);
+            this.btnNegativo.TabIndex = 21;
+            this.btnNegativo.Text = "+/-";
+            this.btnNegativo.UseVisualStyleBackColor = true;
             // 
             // btnResultado
             // 
@@ -285,6 +285,7 @@
             this.btnResultado.TabIndex = 22;
             this.btnResultado.Text = "=";
             this.btnResultado.UseVisualStyleBackColor = true;
+            this.btnResultado.Click += new System.EventHandler(this.btnResultado_Click);
             // 
             // menuStrip1
             // 
@@ -321,7 +322,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(520, 401);
             this.Controls.Add(this.btnResultado);
-            this.Controls.Add(this.button20);
+            this.Controls.Add(this.btnNegativo);
             this.Controls.Add(this.btnDecimal);
             this.Controls.Add(this.btnSumar);
             this.Controls.Add(this.btnRestar);
@@ -378,7 +379,7 @@
         private System.Windows.Forms.Button btnRestar;
         private System.Windows.Forms.Button btnSumar;
         private System.Windows.Forms.Button btnDecimal;
-        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button btnNegativo;
         private System.Windows.Forms.Button btnResultado;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mostrarHistorialToolStripMenuItem;

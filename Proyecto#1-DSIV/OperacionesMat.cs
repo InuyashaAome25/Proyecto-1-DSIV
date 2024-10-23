@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,6 +39,13 @@ namespace Proyecto_1_DSIV
         public double Potencia(double a, double b)
         {
             return Math.Pow(a, b);
+        }
+
+        public double EvaluarExpresion(string expresion)
+        {
+            var tabla = new DataTable();
+            var resultado = tabla.Compute(expresion, string.Empty);
+            return Convert.ToDouble(resultado);
         }
     }
 }
