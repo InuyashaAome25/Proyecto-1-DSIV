@@ -63,6 +63,18 @@ namespace Proyecto_1_DSIV
             txtDisplay.Clear();
         }
 
+        private void MostrarHistorialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHistorial formHistorial = new FormHistorial();
+            formHistorial.Show();
+            this.Hide();
+        }
+
+        private void sALIRToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void btnC_Click(object sender, EventArgs e)
         {
             txtDisplay.Clear();

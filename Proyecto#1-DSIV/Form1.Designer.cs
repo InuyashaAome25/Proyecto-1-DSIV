@@ -51,13 +51,17 @@
             this.btnDecimal = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.btnResultado = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mostrarHistorialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sALIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(163, 9);
+            this.label1.Location = new System.Drawing.Point(163, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(179, 20);
             this.label1.TabIndex = 0;
@@ -65,7 +69,7 @@
             // 
             // txtDisplay
             // 
-            this.txtDisplay.Location = new System.Drawing.Point(52, 71);
+            this.txtDisplay.Location = new System.Drawing.Point(52, 126);
             this.txtDisplay.Name = "txtDisplay";
             this.txtDisplay.Size = new System.Drawing.Size(402, 22);
             this.txtDisplay.TabIndex = 1;
@@ -73,7 +77,7 @@
             // btnCE
             // 
             this.btnCE.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCE.Location = new System.Drawing.Point(86, 100);
+            this.btnCE.Location = new System.Drawing.Point(86, 155);
             this.btnCE.Name = "btnCE";
             this.btnCE.Size = new System.Drawing.Size(75, 35);
             this.btnCE.TabIndex = 2;
@@ -84,7 +88,7 @@
             // btnC
             // 
             this.btnC.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnC.Location = new System.Drawing.Point(168, 100);
+            this.btnC.Location = new System.Drawing.Point(168, 155);
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(75, 35);
             this.btnC.TabIndex = 3;
@@ -95,7 +99,7 @@
             // btnExponente
             // 
             this.btnExponente.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExponente.Location = new System.Drawing.Point(250, 100);
+            this.btnExponente.Location = new System.Drawing.Point(250, 155);
             this.btnExponente.Name = "btnExponente";
             this.btnExponente.Size = new System.Drawing.Size(75, 35);
             this.btnExponente.TabIndex = 4;
@@ -105,7 +109,7 @@
             // btnRaiz
             // 
             this.btnRaiz.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRaiz.Location = new System.Drawing.Point(331, 101);
+            this.btnRaiz.Location = new System.Drawing.Point(331, 156);
             this.btnRaiz.Name = "btnRaiz";
             this.btnRaiz.Size = new System.Drawing.Size(75, 34);
             this.btnRaiz.TabIndex = 5;
@@ -115,7 +119,7 @@
             // btnCero
             // 
             this.btnCero.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCero.Location = new System.Drawing.Point(86, 141);
+            this.btnCero.Location = new System.Drawing.Point(86, 196);
             this.btnCero.Name = "btnCero";
             this.btnCero.Size = new System.Drawing.Size(75, 34);
             this.btnCero.TabIndex = 6;
@@ -125,7 +129,7 @@
             // btnUno
             // 
             this.btnUno.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUno.Location = new System.Drawing.Point(167, 141);
+            this.btnUno.Location = new System.Drawing.Point(167, 196);
             this.btnUno.Name = "btnUno";
             this.btnUno.Size = new System.Drawing.Size(75, 34);
             this.btnUno.TabIndex = 7;
@@ -135,7 +139,7 @@
             // btnDos
             // 
             this.btnDos.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDos.Location = new System.Drawing.Point(250, 141);
+            this.btnDos.Location = new System.Drawing.Point(250, 196);
             this.btnDos.Name = "btnDos";
             this.btnDos.Size = new System.Drawing.Size(75, 34);
             this.btnDos.TabIndex = 8;
@@ -145,7 +149,7 @@
             // btnTres
             // 
             this.btnTres.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTres.Location = new System.Drawing.Point(86, 180);
+            this.btnTres.Location = new System.Drawing.Point(86, 235);
             this.btnTres.Name = "btnTres";
             this.btnTres.Size = new System.Drawing.Size(75, 34);
             this.btnTres.TabIndex = 9;
@@ -155,7 +159,7 @@
             // btnCuatro
             // 
             this.btnCuatro.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCuatro.Location = new System.Drawing.Point(167, 180);
+            this.btnCuatro.Location = new System.Drawing.Point(167, 235);
             this.btnCuatro.Name = "btnCuatro";
             this.btnCuatro.Size = new System.Drawing.Size(75, 34);
             this.btnCuatro.TabIndex = 10;
@@ -165,7 +169,7 @@
             // btnCinco
             // 
             this.btnCinco.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCinco.Location = new System.Drawing.Point(250, 180);
+            this.btnCinco.Location = new System.Drawing.Point(250, 235);
             this.btnCinco.Name = "btnCinco";
             this.btnCinco.Size = new System.Drawing.Size(75, 34);
             this.btnCinco.TabIndex = 11;
@@ -175,7 +179,7 @@
             // btnSeis
             // 
             this.btnSeis.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeis.Location = new System.Drawing.Point(87, 220);
+            this.btnSeis.Location = new System.Drawing.Point(87, 275);
             this.btnSeis.Name = "btnSeis";
             this.btnSeis.Size = new System.Drawing.Size(75, 34);
             this.btnSeis.TabIndex = 12;
@@ -185,7 +189,7 @@
             // btnSiete
             // 
             this.btnSiete.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiete.Location = new System.Drawing.Point(168, 220);
+            this.btnSiete.Location = new System.Drawing.Point(168, 275);
             this.btnSiete.Name = "btnSiete";
             this.btnSiete.Size = new System.Drawing.Size(75, 34);
             this.btnSiete.TabIndex = 13;
@@ -195,7 +199,7 @@
             // btnOcho
             // 
             this.btnOcho.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOcho.Location = new System.Drawing.Point(248, 220);
+            this.btnOcho.Location = new System.Drawing.Point(248, 275);
             this.btnOcho.Name = "btnOcho";
             this.btnOcho.Size = new System.Drawing.Size(75, 34);
             this.btnOcho.TabIndex = 14;
@@ -205,7 +209,7 @@
             // btnNueve
             // 
             this.btnNueve.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNueve.Location = new System.Drawing.Point(86, 260);
+            this.btnNueve.Location = new System.Drawing.Point(86, 315);
             this.btnNueve.Name = "btnNueve";
             this.btnNueve.Size = new System.Drawing.Size(75, 34);
             this.btnNueve.TabIndex = 15;
@@ -215,7 +219,7 @@
             // btnDividir
             // 
             this.btnDividir.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDividir.Location = new System.Drawing.Point(331, 141);
+            this.btnDividir.Location = new System.Drawing.Point(331, 196);
             this.btnDividir.Name = "btnDividir";
             this.btnDividir.Size = new System.Drawing.Size(75, 34);
             this.btnDividir.TabIndex = 16;
@@ -225,7 +229,7 @@
             // btnMultiplicar
             // 
             this.btnMultiplicar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMultiplicar.Location = new System.Drawing.Point(331, 180);
+            this.btnMultiplicar.Location = new System.Drawing.Point(331, 235);
             this.btnMultiplicar.Name = "btnMultiplicar";
             this.btnMultiplicar.Size = new System.Drawing.Size(75, 34);
             this.btnMultiplicar.TabIndex = 17;
@@ -235,7 +239,7 @@
             // btnRestar
             // 
             this.btnRestar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestar.Location = new System.Drawing.Point(331, 220);
+            this.btnRestar.Location = new System.Drawing.Point(331, 275);
             this.btnRestar.Name = "btnRestar";
             this.btnRestar.Size = new System.Drawing.Size(75, 34);
             this.btnRestar.TabIndex = 18;
@@ -245,7 +249,7 @@
             // btnSumar
             // 
             this.btnSumar.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSumar.Location = new System.Drawing.Point(331, 260);
+            this.btnSumar.Location = new System.Drawing.Point(331, 315);
             this.btnSumar.Name = "btnSumar";
             this.btnSumar.Size = new System.Drawing.Size(75, 34);
             this.btnSumar.TabIndex = 19;
@@ -255,7 +259,7 @@
             // btnDecimal
             // 
             this.btnDecimal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDecimal.Location = new System.Drawing.Point(248, 260);
+            this.btnDecimal.Location = new System.Drawing.Point(248, 315);
             this.btnDecimal.Name = "btnDecimal";
             this.btnDecimal.Size = new System.Drawing.Size(75, 34);
             this.btnDecimal.TabIndex = 20;
@@ -265,7 +269,7 @@
             // button20
             // 
             this.button20.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.Location = new System.Drawing.Point(167, 260);
+            this.button20.Location = new System.Drawing.Point(167, 315);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(75, 34);
             this.button20.TabIndex = 21;
@@ -275,19 +279,47 @@
             // btnResultado
             // 
             this.btnResultado.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResultado.Location = new System.Drawing.Point(205, 299);
+            this.btnResultado.Location = new System.Drawing.Point(205, 354);
             this.btnResultado.Name = "btnResultado";
             this.btnResultado.Size = new System.Drawing.Size(75, 34);
             this.btnResultado.TabIndex = 22;
             this.btnResultado.Text = "=";
             this.btnResultado.UseVisualStyleBackColor = true;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mostrarHistorialToolStripMenuItem,
+            this.sALIRToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(520, 28);
+            this.menuStrip1.TabIndex = 23;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // mostrarHistorialToolStripMenuItem
+            // 
+            this.mostrarHistorialToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mostrarHistorialToolStripMenuItem.Name = "mostrarHistorialToolStripMenuItem";
+            this.mostrarHistorialToolStripMenuItem.Size = new System.Drawing.Size(148, 24);
+            this.mostrarHistorialToolStripMenuItem.Text = "Mostrar Historial";
+            this.mostrarHistorialToolStripMenuItem.Click += new System.EventHandler(this.MostrarHistorialToolStripMenuItem_Click);
+            // 
+            // sALIRToolStripMenuItem
+            // 
+            this.sALIRToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sALIRToolStripMenuItem.Name = "sALIRToolStripMenuItem";
+            this.sALIRToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
+            this.sALIRToolStripMenuItem.Text = "SALIR";
+            this.sALIRToolStripMenuItem.Click += new System.EventHandler(this.sALIRToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(520, 349);
+            this.ClientSize = new System.Drawing.Size(520, 401);
             this.Controls.Add(this.btnResultado);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.btnDecimal);
@@ -311,9 +343,13 @@
             this.Controls.Add(this.btnCE);
             this.Controls.Add(this.txtDisplay);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Proyecto 1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,6 +380,9 @@
         private System.Windows.Forms.Button btnDecimal;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button btnResultado;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem mostrarHistorialToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sALIRToolStripMenuItem;
     }
 }
 

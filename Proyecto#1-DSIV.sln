@@ -5,6 +5,11 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proyecto#1-DSIV", "Proyecto#1-DSIV\Proyecto#1-DSIV.csproj", "{A771A7A8-A58B-49D5-844C-D29F3AE0DE49}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{22523B41-3768-476C-B65B-7B4A7A6B2658}"
+	ProjectSection(SolutionItems) = preProject
+		BDProyecto.sql = BDProyecto.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
